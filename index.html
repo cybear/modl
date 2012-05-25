@@ -34,30 +34,12 @@
         <li>Make a pull request!</li>
       </ol>
 
-<h3>Current Devices</h3>
-<p>The list below is generated directly from the JSON file</p>
-<div id="devices"></div>
-
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/cybear">cybear (Björn Söderqvist)</a> &amp; <a href="https://github.com/suhajdab">suhajdab (Balázs Suhajda)</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-
-    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
-
-    <script>
-    function go(data){
-      var list=data.map(function(item){
-        return '<li>'+item+'</li>';
-      }).join('');
-      $('#devices').html('<ul>'+list+'</ul>');
-    }
-
-    $.getJSON("//raw.github.com/suhajdab/modl/master/devices.json", go);
-    </script>
-
     <script src="javascripts/scale.fix.js"></script>
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

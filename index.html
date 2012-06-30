@@ -22,11 +22,50 @@
       <section>
         <h3>Welcome to the Malmö Open Device Lab</h3>
 
-<p>modl is basically an open mobile device test lab based on contributions.</p>
-<p>Seeing Jeremy Keith's <a href="http://adactio.com/journal/5446/">initiative</a>, we felt that this is a brilliant idea. One that should be followed! One that we could set up in Malmö.</p>
+        <p>Malmö Open Device Lab or simply modl is an effort to provide the Malmö web developer community access to a wide range of mobile device to test their work.</p>
+
+        <p>In today's constantly evolving device landscape it is quite difficult for most organizations to create a device pool diverse enough to cover even the more common brand / model / os combinations. Of course, any testing is better than no testing, but for a website specifically aimed at mobile devices, that may be insufficient. This is where we would like to help.</p>
+
+        <p>We are working to collect devices that many of us have in the back of drawers, hidden away, forgotten. If you are no longer using an old device, let other take advantage of it and use it as a test device. It will naturally remain yours, you can take it back at any time. You are just lending it to a group of grateful individuals.</p>
 
 
-<h3>Add your devices</h3>
+        <!--
+            TODO: mention planned tech support ( adobe shadow, liveStyle, liveReload )
+            TODO: venue issue
+        -->
+        <!--<p>Seeing Jeremy Keith's <a href="http://adactio.com/journal/5446/">initiative</a>, we felt that this is a brilliant idea. One that should be followed! One that we could set up in Malmö.</p>-->
+
+
+        <h3>Our devices</h3>
+
+        <table id="device-table">
+            <thead>
+                <tr>
+                    <td>Brand</td>
+                    <td>Model</td>
+                    <td>OS</td>
+                    <td>Contributer</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <script>
+            var tbl = document.querySelector('#device-table tbody'),
+                tmpl = '<tr><td>mnf</td><td>mdl</td><td>os</td><td>cntr</td></tr>';
+
+            function devices( items ) {
+                for ( var i = 0, item; item = items[i]; i++ ) {
+                    var html = tmpl
+                            .replace( 'mnf', item[0] )
+                            .replace( 'mdl', item[1] )
+                            .replace( 'os', item[2] )
+                            .replace( 'cntr', item[3] );
+                    tbl.innerHTML += html;
+                }
+            }
+        </script>
+        <script src="https://raw.github.com/suhajdab/modl/master/devices.json"></script>
         <p>If you have a device you'd like to share:</p>
         <ol>
         <li>Fork the repo</li>
@@ -36,21 +75,21 @@
 
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/cybear">cybear (Björn Söderqvist)</a> &amp; <a href="https://github.com/suhajdab">suhajdab (Balázs Suhajda)</a></p>
+        <p>This project is maintained by <br/><a href="https://github.com/cybear">cybear (Björn Söderqvist)</a><br/>&amp; <a href="https://github.com/suhajdab">suhajdab (Balázs Suhajda)</a></p>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-207925-21");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
+    <script>document.write('<script src="http://' + (location.host || 'onembp.local').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+        var pageTracker = _gat._getTracker("UA-207925-21");
+        pageTracker._trackPageview();
+        } catch(err) {}
+    </script>
   </body>
 </html>

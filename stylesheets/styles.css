@@ -183,6 +183,22 @@ footer {
   bottom:50px;
 }
 
+table#device-table thead {
+	color: #999;
+	font-size: 80%;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+table#device-table tbody {
+	white-space: nowrap;
+}
+
+table#device-table tbody tr:hover {
+	background-color: #eee;
+	color: #39c;
+}
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {

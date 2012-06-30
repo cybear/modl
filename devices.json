@@ -2,7 +2,7 @@ devices([
 	["Amazon","Kindle 4","Kindle 4.0 (1308590058)","Björn Söderqvist"],
 	["Apple","iPhone 3", "iOS 4.2.1", "Patric Jonsson"],
 	["Apple","iPhone 4","iOS 5.0","onereason AB"],
-	["Google", "Nexus One","2.3.6", "Patric Jonsson"]
+	["Google", "Nexus One","2.3.6", "Patric Jonsson"],
 	["HP","Palm Pre 2","WebOS 2.1","Björn Söderqvist"],
-	["Samsung","Galaxy W GT-I8150","Android 2.3 (Gingerbread)","onereason AB"],
+	["Samsung","Galaxy W GT-I8150","Android 2.3 (Gingerbread)","onereason AB"]
 ]);

@@ -194,6 +194,10 @@ table#device-table tbody {
 	white-space: nowrap;
 }
 
+table#device-table tbody tr {
+	-webkit-transition: color 250ms ease-in-out;
+}
+
 table#device-table tbody tr:hover {
 	background-color: #eee;
 	color: #39c;

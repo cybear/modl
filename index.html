@@ -42,10 +42,10 @@
         <table id="device-table">
             <thead>
                 <tr>
-                    <td>Brand</td>
-                    <td>Model</td>
-                    <td>OS</td>
-                    <td>Contributor</td>
+                    <th>Brand</th>
+                    <th>Model</th>
+                    <th>OS</th>
+                    <th>Contributor</th>
                 </tr>
             </thead>
             <tbody></tbody>
@@ -65,11 +65,11 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    <script src="https://raw.github.com/tristen/tablesort/gh-pages/tablesort.min.js"></script>
+    <script src="javascripts/tablesort.js"></script>
     <script>
         var tbl = document.querySelector('#device-table'),
             tbody = tbl.getElementsByTagName('tbody')[0],
-                tmpl = '<tr><td>mnf</td><td>mdl</td><td>os</td><td>cntr</td></tr>';
+            tmpl = '<tr><td>mnf</td><td>mdl</td><td>os</td><td>cntr</td></tr>';
 
         function devices( items ) {
             for ( var i = 0, item; item = items[i]; i++ ) {
@@ -78,7 +78,7 @@
                         .replace( 'mdl', item[1] )
                         .replace( 'os', item[2] )
                         .replace( 'cntr', item[3] );
-                tbl.innerHTML += html;
+                tbody.innerHTML += html;
             }
 
             new Tablesort(tbl);

@@ -26,13 +26,14 @@
 
         <p>In today's constantly evolving device landscape it is quite difficult for most organizations to create a device pool diverse enough to cover even the more common brand / model / os combinations. Of course, any testing is better than no testing, but for a website specifically aimed at mobile devices, that may be insufficient. This is where we would like to help.</p>
 
-        <p>We are working to collect devices that many of us have in the back of drawers, hidden away, forgotten. If you are no longer using an old device, let other take advantage of it and use it as a test device. It will naturally remain yours, you can take it back at any time. You are just lending it to a group of grateful individuals.</p>
+        <p>We are working to collect devices that many of us have in the back of drawers, hidden away, forgotten. If you are no longer using an old device, why not let others take advantage of it and use it as a test device. It will naturally remain yours, you can take it back at any time. You are just lending it to a group of grateful individuals.</p>
 
+        <p>To make testing on a large number of devices easier, we plan to cater to the testers' needs with some pre-installed software. For example, <a href="http://labs.adobe.com/technologies/shadow/">Adobe Shadow</a> to simultaneously control page view, take screen shots on all supported mobiles and <a href="https://github.com/One-com/livestyle">liveStyle</a> / <a href="http://livereload.com/">liveReload</a> to refresh styling across devices as soon as the stylesheet is saved.</p>
 
-        <!--
-            TODO: mention planned tech support ( adobe shadow, liveStyle, liveReload )
-            TODO: venue issue
-        -->
+        <p>Furthermore, we plan to place all mobiles and tablets on a device wall take make them more accessible, provide a better overview and minimize cable clutter.</p>
+
+        <p>At this point you might be saying, enough already! Where do I go to start testing? Well, this is seems to be our biggest challenge now. We are looking for an easily accessible, open, but safe location. We have some ideas already, but nothing concrete or confirmed. If you have any suggestions, pls share at <a href="https://twitter.com/MalmODL">@MalmODL</a></p>
+
         <!--<p>Seeing Jeremy Keith's <a href="http://adactio.com/journal/5446/">initiative</a>, we felt that this is a brilliant idea. One that should be followed! One that we could set up in Malmö.</p>-->
 
 
@@ -44,28 +45,12 @@
                     <td>Brand</td>
                     <td>Model</td>
                     <td>OS</td>
-                    <td>Contributer</td>
+                    <td>Contributor</td>
                 </tr>
             </thead>
             <tbody></tbody>
         </table>
 
-        <script>
-            var tbl = document.querySelector('#device-table tbody'),
-                tmpl = '<tr><td>mnf</td><td>mdl</td><td>os</td><td>cntr</td></tr>';
-
-            function devices( items ) {
-                for ( var i = 0, item; item = items[i]; i++ ) {
-                    var html = tmpl
-                            .replace( 'mnf', item[0] )
-                            .replace( 'mdl', item[1] )
-                            .replace( 'os', item[2] )
-                            .replace( 'cntr', item[3] );
-                    tbl.innerHTML += html;
-                }
-            }
-        </script>
-        <script src="https://raw.github.com/suhajdab/modl/master/devices.json"></script>
         <p>If you have a device you'd like to share:</p>
         <ol>
         <li>Fork the repo</li>
@@ -80,6 +65,26 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
+    <script src="https://raw.github.com/tristen/tablesort/gh-pages/tablesort.min.js"></script>
+    <script>
+        var tbl = document.querySelector('#device-table'),
+            tbody = tbl.getElementsByTagName('tbody')[0],
+                tmpl = '<tr><td>mnf</td><td>mdl</td><td>os</td><td>cntr</td></tr>';
+
+        function devices( items ) {
+            for ( var i = 0, item; item = items[i]; i++ ) {
+                var html = tmpl
+                        .replace( 'mnf', item[0] )
+                        .replace( 'mdl', item[1] )
+                        .replace( 'os', item[2] )
+                        .replace( 'cntr', item[3] );
+                tbl.innerHTML += html;
+            }
+
+            new Tablesort(tbl);
+        }
+    </script>
+    <script src="https://raw.github.com/suhajdab/modl/master/devices.json"></script>
     <script>if (location.host == 'localhost') document.write('<script src="http://' + (location.host || 'onembp.local').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

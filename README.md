@@ -1,6 +1,6 @@
 #modl - Malmö Open Device Lab
 
-Malmö Open Device Lab or simply modl is an effort to provide the Malmö web developer community access to a wide range of mobile device to test their work.
+Malmö Open Device Lab or simply modl is an effort to provide the Malmö web developer community access to a wide range of mobiles device to test their work.
 
 ## If you have a device you'd like to share:
 

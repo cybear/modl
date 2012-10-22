@@ -8,5 +8,6 @@ devices([
 	["Google","Nexus Q","Android 4.0 (Ice Cream Sandwich)","Kenneth Auchenberg"],
 	["HP","Palm Pre 2","WebOS 2.1","Björn Söderqvist"],
 	["Samsung","Galaxy S II GT-I9100","Android 2.3.5 (Gingerbread)","Claus Topholt"],
-	["Samsung","Galaxy W GT-I8150","Android 2.3 (Gingerbread)","onereason"]
+	["Samsung","Galaxy W GT-I8150","Android 2.3 (Gingerbread)","onereason"],
+	["Sony","PSP","","Björn Söderqvist"]
 ]);

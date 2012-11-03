@@ -2,6 +2,7 @@ devices([
 	["Amazon","Kindle 4","Kindle 4.0 (1308590058)","Björn Söderqvist"],
 	["Apple","iPhone 3", "iOS 4.2.1", "Patric Jonsson"],
 	["Apple","iPhone 4","iOS 5.0","onereason"],
+	["Apple","iPhone 4","iOS 6.0","tregusti"],
 	["Google","Galaxy Nexus","Android 4.1 (Jelly Bean)","Kenneth Auchenberg"],
 	["Google","Nexus 7","Android 4.1 (Jelly Bean)","Kenneth Auchenberg"],
 	["Google","Nexus One","Android 2.3.6", "Patric Jonsson"],

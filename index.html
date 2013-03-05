@@ -1,111 +1,297 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>modl ∴ Malmö Open Device Lab</title>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<title>Malmö Open Device Lab - MODL</title>
+	
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>modl</h1>
-        <p>Malmö Open Device Lab</p>
-        <p class="view"><a href="https://github.com/suhajdab/modl">View the Project on GitHub <small>suhajdab/modl</small></a></p>
+	<script type="text/javascript">
 
-        <h3>Venue</h3>
-        <p>modl is generously hosted at <a href="http://www.inuse.se/">inUse</a>: Gustav Adolfs Torg 10 B, 211 39 Malmö.</p>
-        <iframe width="270" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Inuse+AB,+Gustav+Adolfs+torg,+Malm%C3%B6,+Sweden&amp;aq=0&amp;oq=inuse+malm%C3%B6&amp;sll=35.101934,-95.712891&amp;sspn=62.080939,114.169922&amp;t=h&amp;ie=UTF8&amp;hq=Inuse+AB,&amp;hnear=Gustav+Adolfs+torg,+Malm%C3%B6,+Sk%C3%A5ne+l%C3%A4n,+Sweden&amp;ll=55.602015,12.999826&amp;spn=0.006295,0.006295&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Inuse+AB,+Gustav+Adolfs+torg,+Malm%C3%B6,+Sweden&amp;aq=0&amp;oq=inuse+malm%C3%B6&amp;sll=35.101934,-95.712891&amp;sspn=62.080939,114.169922&amp;t=h&amp;ie=UTF8&amp;hq=Inuse+AB,&amp;hnear=Gustav+Adolfs+torg,+Malm%C3%B6,+Sk%C3%A5ne+l%C3%A4n,+Sweden&amp;ll=55.602015,12.999826&amp;spn=0.006295,0.006295" style="color:#0000FF;text-align:left">View Larger Map</a></small>
+		WebFontConfig = {
+			google: { families: [ 'Roboto:400,300,700:latin' ] }
+		};
 
-      </header>
-      <section>
-        <h3>Welcome to the Malmö Open Device Lab</h3>
+		(function() {
+			var html = document.getElementsByTagName('html')[0];
 
-        <p>Malmö Open Device Lab or simply modl is an effort to provide the Malmö web developer community access to a wide range of mobile device to test their work.</p>
+		    html.className = html.className.replace(/(\s|^)no-js(\s|$)/, '$1js wf-loading$2');
 
-        <p>In today's constantly evolving device landscape it is quite difficult for most organizations to create a device pool diverse enough to cover even the more common brand / model / os combinations. Of course, any testing is better than no testing, but for a website specifically aimed at mobile devices, that may be insufficient. This is where we would like to help.</p>
+		    setTimeout(function() {
+		        html.className = html.className.replace(' wf-loading', '');
+		    }, 3000);
+			var wf = document.createElement('script');
+			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+				'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+		})();
+	</script>
+	<link rel="stylesheet" href="css/screen.css" media="all">
 
-        <p>We are working to collect devices that many of us have in the back of drawers, hidden away, forgotten. If you are no longer using an old device, why not let others take advantage of it and use it as a test device. It will naturally remain yours, you can take it back at any time. You are just lending it to a group of grateful individuals.</p>
+</head>
+<body>
+	<div id="content-top" class="stacked">
+		<div class="chunk masthead">
+			<header role="banner">
+				<div class="logo-wrap">
+					<img class="logo-img" src="img/logo.png" alt="">
+				</div>
+				<div class="site-title">
+					<h1>Malmö Open Device Lab</h1>
+				</div>
+			</header>
+						
+		</div>
+	</div>
+	<main id="content-main" role="main">
+		<article>
+			<div class="stacked intro">
+				<section>
+					<div class="chunk">
+						<h2>We help you test on many devices for free.</h2>
+						<p>These days, websites are required to work on phones and tablets as well as laptops. Making sure your web-based product works across a wide range of browsers and screen sizes can be a costly affair in terms of hardware. <abbr title="Malmö Open Device Lab">MODL</abbr> is a community-operated device testing lab, where you can test on loads of devices for free.</p>
+					</div>
+				</section>
+			</div>
+			<div class="stacked contrasted">
+				<section>
+					<div class="chunk">
+						<h2>Find us</h2>
+						<p>We are situated in central Malmö, at Gustav Adolfs Torg 10B, in a space generously hosted by <a class="inuse-link" href="http://inuse.se">inUse, a digital design agency</a>.</p>
+						<p><a id="map-link" class="btn" href="https://maps.google.se/maps?q=Inuse+AB,+Gustav+Adolfs+torg,+Malm%C3%B6&amp;hl=sv&amp;ie=UTF8&amp;sll=55.567863,13.051758&amp;sspn=0.366118,0.870667&amp;oq=inUse+&amp;t=h&amp;hq=Inuse+AB,&amp;hnear=Gustav+Adolfs+torg,+Malm%C3%B6,+Sk%C3%A5ne+l%C3%A4n&amp;z=16">Show map</a></p>
+					</div>
+				</section>
+			</div>
+			<div class="stacked">
+				<section>
+					<div class="chunk">
+						<div class="block">
+							<h2>Use the lab</h2>
+							<p>It&rsquo;s very simple:</p>
+							<ol>
+								<li>Write down when you would like to use the lab</li>
+								<li><a class="btn btn-inline" href="mailto:info@modl.se">Send it</a> to us at info@modl.se</li>
+								<li>We&rsquo;ll get back to you and help set it up.</li>
+								<li>No more steps!</li>
+							</ol>
+							<p>If there are specific challenges regarding testing or availability, we&rsquo;ll solve them along the way.</p>
+						</div>
+						<div class="block sidebar">
+							<div role="complementary">
+								<div class="sidebar-inner">
+									<h3>New to device testing?</h3>
+									<p>If <a href="http://twitter.com/thatemil">Emil</a> is around when you&rsquo;re at the lab, he can probably help you get started. Otherwise, send us an email.</p>
+								</div>
+							</div>
+						</div>			
+					</div>
+				</section>
+			</div>
+			<div class="stacked contrasted">
+				<section>
+					<div class="chunk">
+						<h2>The device collection</h2>
+						<p>Our devices are generously donated by members. Members still own the device, but agree to let guests of the lab use it. These are the devices that have been donated so far:</p>
+						<table class="device-table">
+							<thead>
+								<tr>
+									<th scope="col">Device type</th>
+									<th scope="col"><abbr title="Operating System">OS</abbr>/version</th>
+									<th scope="col">Donated by</th>
+								</tr>
+								
+							</thead>
+							<tbody>
+								<tr>
+									<th data-title="Device type" scope="row">
+										Amazon Kindle 4
+									</th>
+									<td data-title="OS">
+										Kindle 4.0 (1308590058)
+									</td>
+									<td data-title="Donated by"> 
+										Björn Söderqvist
+									</td>
+								</tr>
+								<tr>
+									<th data-title="Device type" scope="row">
+										Apple iPhone 3
+									</th>
+									<td data-title="OS">
+										iOS 4.2.1
+									</td>
+									<td data-title="Donated by">
+										Patric Jonsson
+									</td>
+								</tr>
+								<tr>
+									<th data-title="Device type" scope="row">
+										Apple iPhone 4
+									</th>
+									<td data-title="OS">
+										iOS 5.0
+									</td>
+									<td data-title="Donated by">
+										onereason
+									</td>
+								</tr>
+								<tr>
+									<th data-title="Device type" scope="row">
+										Apple iPad 1
+									</th>
+									<td data-title="OS">
+										iOS 5.1.1
+									</td>
+									<td data-title="Donated by">
+										onereason
+									</td>
+								</tr>
 
-        <p>To make testing on a large number of devices easier, we plan to cater to the testers' needs with some pre-installed software. For example, <a href="http://html.adobe.com/edge/inspect/">Adobe Edge Inspect</a> to simultaneously control page view, take screen shots on all supported mobiles and <a href="https://github.com/One-com/livestyle">liveStyle</a> / <a href="http://livereload.com/">liveReload</a> to refresh styling across devices as soon as the stylesheet is saved.</p>
+								<tr>
+									<th data-title="Device type" scope="row">
+										Apple iPad Retina (4)
+									</th>
+									<td data-title="OS">
+										iOS 6.0.1
+									</td>
+									<td data-title="Donated by">
+										onereason
+									</td>
+								</tr>
 
-        <p>Furthermore, we plan to place all mobiles and tablets on a device wall take make them more accessible, provide a better overview and minimize cable clutter. For an example, take a look at <a href="http://phonegap.com/2012/03/29/phonegaps-new-device-wall/">Phonegap's device wall</a>.</p>
+								<tr>
+									<th data-title="Device type" scope="row">
+										Apple iPhone 4
+									</th>
+									<td data-title="OS">
+										iOS 6.0
+									</td>
+									<td data-title="Donated by">
+										tregusti
+									</td>
+								</tr>
+								
+								<tr>
+									<th data-title="Device type" scope="row">
+										Google Nexus One
+									</th>
+									<td data-title="OS">
+										Android 2.3.6
+									</td>
+									<td data-title="Donated by">
+										Patric Jonsson
+									</td>
+								</tr>
+								
+								<tr>
+									<th data-title="Device type" scope="row">
+										HP Palm Pre 2
+									</th>
+									<td data-title="OS">
+										WebOS 2.1
+									</td>
+									<td data-title="Donated by">
+										Björn Söderqvist
+									</td>
+								</tr>
+								<tr>
+									<th data-title="Device type" scope="row">
+										Samsung Galaxy S II GT-I9100
+									</th>
+									<td data-title="OS">
+										Android 2.3.5 (Gingerbread)
+									</td>
+									<td data-title="Donated by">
+										Claus Topholt
+									</td>
+								</tr>
+								<tr>
+									<th data-title="Device type" scope="row">
+										Samsung Galaxy W GT-I8150
+									</th>
+									<td data-title="OS">
+										Android 2.3 (Gingerbread)
+									</td>
+									<td data-title="Donated by">
+										onereason
+									</td>
+								</tr>
+								<tr>
+									<th data-title="Device type" scope="row">
+										Sony <abbr title="Playstation Portable">PSP</abbr>
+									</th>
+									<td data-title="OS">PSP System Software</td>
+									<td data-title="Donated by">
+										Björn Söderqvist
+									</td>
+								</tr>
 
-        <p>At this point you might be saying, enough already! Where do I go to start testing? Well, you'll have to hold on a little longer as we iron out the details, set up the infrastructure at our generous host, <a href="http://www.inuse.se/">inUse</a>. We'll update this page and post on our <a href="https://www.facebook.com/MalmODL">facebook</a> and <a href="https://twitter.com/MalmODL">twitter</a> pages as soon as we're ready to accept first bookings. See you soon!</p>
+							</tbody>
+						</table>
+						<h3>Do you have any devices laying around?</h3>
+						<p>Share it with the community&mdash;<a class="btn" href="mailto:info@modl.se">get in touch!</a></p>
+						<p>We especially need more Android devices, smartphones as well as tablets.</p>
+					</div>
+				</section>
+				
+			</div>
+			<div class="stacked">
+				<section>
+					<div class="chunk">
+						<h2>Who&rsquo;s behind this?</h2>
+						<p>This project was founded in 2012 by <a href="http://twitter.com/suhajdab">Balázs Suhajda</a> and <a href="http://twitter.com/kaptencybear">Björn Söderqvist</a></p>
+						<p><a href="http://twitter.com/thatemil">Emil Björklund</a> is the representative from inUse and in charge of the physical location.</p>
+					</div>
+				</section>
+			</div>
+			
+			<div class="stacked contrasted">
+				<div class="chunk">
+					<h2>Good to know</h2>
+					<p>There is normally a spare laptop (Macbook Pro) in the lab, fitted with a range of tools to try out:</p>
+					<ul>
+						<li><a href="http://html.adobe.com/edge/inspect/">Adobe Edge Inspect</a>, a tool to sync navigation, take screenshots and debug code across many devices simultaneously</li>
+						<li>Loads of old and new versions of web browsers on PC, Mac and Linux</li>
+						<li>Virtual machines for Windows XP, Windows Vista, Windows 7 and Windows 8, including various versions of Internet Explorer, plus Ubuntu Linux</li>
+						<li>Tools for debugging HTTP-requests</li>
+					</ul>
+					<p>Housekeeping rules are available when you book a session, but mostly we expect you to be generally civil and pop out of the lab for a (free!) coffee now and then, with the people working in the office.</p>
+				</div>
+			</div>
+		</article>
+	</main>
 
-        <!--<p>Seeing Jeremy Keith's <a href="http://adactio.com/journal/5446/">initiative</a>, we felt that this is a brilliant idea. One that should be followed! One that we could set up in Malmö.</p>-->
-
-        <!--    TODO: provide easy method for client requests
-                TODO: device wishlist
-                TODO: feature search in device list ( using ppk's data )
-                TODO: Link section - phonegap wall, Clearleft lab
-        -->
-
-        <h3>Our devices</h3>
-
-        <table id="device-table">
-            <thead>
-                <tr>
-                    <th>Brand</th>
-                    <th>Model</th>
-                    <th>OS</th>
-                    <th>Contributor</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-
-        <p>If you have a device you'd like to share:</p>
-        <ol>
-          <li>Fork the repo</li>
-          <li>Add your device to devices.jsonp</li>
-          <li>Make a pull request!</li>
-          <li>...or if you don't know what all that means, mail us <a href="mailto:
-modl@1r.nu?subject=I got something you want">modl@1r.nu</a></li>
-        </ol>
-
-      </section>
-      <footer>
-        <p>This project is maintained by <br/><a href="https://github.com/cybear">cybear (Björn Söderqvist)</a><br/>&amp; <a href="https://github.com/suhajdab">suhajdab (Balázs Suhajda)</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    <script src="javascripts/tablesort.js"></script>
-    <script>
-        var tbl = document.querySelector('#device-table'),
-            tbody = tbl.getElementsByTagName('tbody')[0],
-            tmpl = '<tr><td>mnf</td><td>mdl</td><td>os</td><td>cntr</td></tr>';
-
-        function devices( items ) {
-            for ( var i = 0, item; item = items[i]; i++ ) {
-                var html = tmpl
-                        .replace( 'mnf', item[0] )
-                        .replace( 'mdl', item[1] )
-                        .replace( 'os', item[2] )
-                        .replace( 'cntr', item[3] );
-                tbody.innerHTML += html;
-            }
-
-            new Tablesort(tbl);
-        }
-    </script>
-    <script src="https://raw.github.com/suhajdab/modl/master/devices.jsonp"></script>
-    <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-        try {
-        var pageTracker = _gat._getTracker("UA-207925-21");
-        pageTracker._trackPageview();
-        } catch(err) {}
-    </script>
-  </body>
+	<div class="stacked faded">
+		<div class="chunk footer">
+			<footer role="contentinfo">
+				<div class="block">
+					<h2>The contact details</h2>
+					<address id="modl-vcard" class="vcard">
+						<span class="fn org">Malmö Open Device Lab</span>
+						<span class="adr">
+							<span class="agent"><abbr title="care of">C/O</abbr> inUse Experience AB</span>
+							<span class="street-address">Gustav Adolfs Torg 10B</span> 
+							<span class="postal-code">211 39</span> <span class="locality">Malmö</span> 
+							<span class="country-name">Sweden</span>
+						</span>
+						<a href="mailto:info@modl.se" class="email">info@modl.se</a>
+						<p><a class="btn" type="text/directory" href="http://h2vx.com/vcf/modl.ebdesign.se">Download contact card</a></p>
+					</address>
+				</div>
+				<div class="block">
+					<h2>Find <abbr>MODL</abbr> elsewhere:</h2>
+					<ul class="social-links li-unstyled">
+						<li><a class="btn" rel="me" href="http://twitter.com/malmodl"><i aria-hidden="true" class="icon icon-tw"></i>Twitter</a></li>
+						<li><a class="btn" rel="me" href="https://www.facebook.com/MalmODL"><i aria-hidden="true" class="icon icon-fb"></i>Facebook</a></li>
+					</ul>
+				</div>
+				
+				<p class="to-top"><a class="btn" href="#content-top">To the top!</a></p>
+			</footer>
+		</div>
+	</div>
+</body>
 </html>
